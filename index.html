@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lifestyle Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">LifeStyle</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#col" aria-controls="col" aria-expanded="false" aria-label="navbarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="col" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#login">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginDialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Log In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please login to access products.</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="email-address">Email: </label>
+                                <input type="email" class="form-control" id="email-address" aria-describedby="emailHelp" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password: </label>
+                                <input type="password" class="form-control" id="password" aria-describedby="passwordHelp">
+                            </div>
+                            <a class="btn btn-primary" href="products.html" role="button">Log In</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup-dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign-Up</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please login to access products.</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username: </label>
+                                <input class="form-control" type="text" id="username" aria-describedby="UsernameHelp" placeholder="Enter valid username">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email-Address: </label>
+                                <input class="form-control" type="email" id="email" aria-describedby="emailHelp" placeholder="Enter valid email-address">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Password: </label>
+                                <input class="form-control" type="password" id="pass" aria-describedby="passwordHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone-Number: </label>
+                                <input class="form-control" type="number" id="phone" aria-describedby="phoneHelp" placeholder="+91 xxxx xxx xxx">
+                            </div>
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron-fluid">
+            <div class="inner-banner">
+                <div class="banner-content">
+                    <h3>We Sell Lifestyles</h3>
+                    <p>Upto 40% discount on premium brands</p>
+                    <button class="btn btn-outline-light" data-toggle="modal" data-target="#login">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Shirts</h3>
+                    </div>
+                    <img src="8.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Premium products from the best brands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Camera</h3>
+                    </div>
+                    <img src="4.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Premium products from the best brands</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Watches</h3>
+                    </div>
+                    <img src="7.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Premium products from the best brands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="mx-auto footer-content navbar-brand">LifeStyle Store © || Contact Us:123456780 ||</a>
+            </div>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
